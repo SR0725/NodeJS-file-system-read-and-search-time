@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
-const dds = require('./data_system/DataDealSystem.js');
+const dds = require('./DataDealSystem.js');
 
 
 dds.tableCreate("test10000")//建立名為test10000資料夾
